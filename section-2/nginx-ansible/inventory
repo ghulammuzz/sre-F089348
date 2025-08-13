@@ -1,0 +1,9 @@
+[nginx_servers]
+server1 ansible_host=54.254.254.242 ansible_user=admin ansible_ssh_private_key_file=~/.ssh/id_ed25519
+server2 ansible_host=13.212.95.239 ansible_user=admin ansible_ssh_private_key_file=~/.ssh/id_ed25519
+server3 ansible_host=13.212.11.59 ansible_user=admin ansible_ssh_private_key_file=~/.ssh/id_ed25519
+server4 ansible_host=54.169.108.123 ansible_user=admin ansible_ssh_private_key_file=~/.ssh/id_ed25519
+server5 ansible_host=52.77.217.46 ansible_user=admin ansible_ssh_private_key_file=~/.ssh/id_ed25519
+server6 ansible_host=47.129.252.14 ansible_user=admin ansible_ssh_private_key_file=~/.ssh/id_ed25519
+server7 ansible_host=13.229.50.106 ansible_user=admin ansible_ssh_private_key_file=~/.ssh/id_ed25519
+server8 ansible_host=18.142.242.101 ansible_user=admin ansible_ssh_private_key_file=~/.ssh/id_ed25519

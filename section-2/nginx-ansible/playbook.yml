@@ -1,0 +1,23 @@
+---
+- name: Install and configure NGINX on multiple servers
+  hosts: nginx_servers
+  become: true
+  tasks:
+    - name: Install NGINX
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Deploy custom index.html
+      template:
+        src: templates/index.html.j2
+        dest: /var/www/html/index.html
+        owner: www-data
+        group: www-data
+        mode: '0644'
+
+    - name: Restart NGINX
+      service:
+        name: nginx
+        state: restarted
